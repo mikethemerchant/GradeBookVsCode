@@ -7,9 +7,14 @@ namespace GradeBook
         static void Main(string[] args)
         {
             if(args.Length > 0)
-                Console.WriteLine("Hello " + args[0] + "!");
+            {
+                foreach(var name in args)
+                {
+                    Console.WriteLine("Hello " + name + "!");
+                }               
+            }
             else 
-                System.Console.WriteLine("No name specified.");
+                System.Console.WriteLine("No name and needs controls.");
         }
     }
 }
